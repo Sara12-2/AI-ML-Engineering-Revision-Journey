@@ -12,9 +12,9 @@
 - Strings for NLP
 
 ## Practice
-- LeetCode: 5 problems ✅
-- HackerRank: 1 course ✅  
-- Kaggle: 2 courses ✅
+- LeetCode
+- HackerRank
+- Kaggle
 
 ## Key Takeaway
 Variables are references, not boxes. Strong Python fundamentals = clean AI pipelines.
