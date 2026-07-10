@@ -64,7 +64,7 @@ The goal is to strengthen Python fundamentals, data science libraries, machine l
 StudySmart AI — An intelligent study tracking system that combines Python fundamentals, full-stack development, and AI analytics.
 
 ### Project Repository
-
+https://github.com/Sara12-2/Study_Smart_AI
 
 
 # 📚 Module 2 — Mathematics for AI/ML
