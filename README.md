@@ -132,3 +132,41 @@ https://github.com/Sara12-2/Study_Smart_AI
 - Mini-Batch Gradient Descent balances speed and stability in deep learning.
 - Adam is the most widely used optimizer in modern AI (GPT, BERT, etc.).
 
+--------------------------------------------------
+
+# 📚 Module 3 — Data Analysis
+
+## ✅ Day 1 — Data Analysis: The First Step Toward Building Intelligent AI Systems
+
+### Topics Covered
+- What is Data Analysis
+- Why Data Analysis Matters for AI/ML
+- Types of Data (Qualitative, Quantitative, Structured, Unstructured)
+- Data Collection (Databases, APIs, Web Scraping, Surveys, Sensors/IoT)
+- Data Quality & Data Cleaning (Missing Values, Duplicates, Incorrect Data, Outliers)
+
+### Key Learnings
+- A model only learns what the data teaches it — data quality directly limits model quality.
+- Understanding data structure and behavior comes before choosing an algorithm.
+- Real-world datasets are rarely clean; detecting issues early prevents downstream model failures.
+- The Data Analysis Workflow: Collect → Clean → Explore → Analyze Patterns → Extract Insights → Prepare for ML.
+
+--------------------------------------------------
+
+## ✅ Day 2 — Exploratory Data Analysis (EDA) & Data Preprocessing: Turning Raw Data Into Model-Ready Data
+
+### Topics Covered
+- Exploratory Data Analysis (Summary Statistics, Distributions, Relationships, Missing Values/Outliers)
+- Data Visualization (Histogram, Bar Chart, Line Chart, Scatter Plot, Box Plot, Heatmap)
+- Feature Engineering (Feature Selection, Feature Creation, Encoding Categorical Variables)
+- Data Preprocessing (Handling Missing Values, Encoding, Feature Scaling, Normalization, Standardization)
+- Data Splitting (Training, Validation, Test Sets)
+- Essential Python Libraries (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn)
+
+### Key Learnings
+- EDA answers the core question: "What story is the data trying to tell?"
+- Visualizations reveal patterns and anomalies that raw numbers alone hide.
+- Well-engineered features often improve performance more than switching algorithms.
+- Normalization and Standardization ensure numerical features are on comparable scales before training.
+- Splitting data into train/validation/test sets measures true generalization, not memorization.
+- Full pipeline: Raw Data → Data Cleaning → EDA → Feature Engineering → Encoding & Scaling → Train/Val/Test Split → ML Model.
