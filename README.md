@@ -170,3 +170,48 @@ https://github.com/Sara12-2/Study_Smart_AI
 - Normalization and Standardization ensure numerical features are on comparable scales before training.
 - Splitting data into train/validation/test sets measures true generalization, not memorization.
 - Full pipeline: Raw Data → Data Cleaning → EDA → Feature Engineering → Encoding & Scaling → Train/Val/Test Split → ML Model.
+
+--------------------------------------------------
+
+# 📚 Module 4 — Machine Learning
+
+## ✅ Day 1 — Supervised Learning: Teaching Machines with Labeled Data
+
+### Topics Covered
+- What is Supervised Learning
+- Regression vs Classification
+- Linear Regression (predicting a continuous number)
+- Classification Algorithms: Logistic Regression, K-Nearest Neighbors, Decision Tree, Random Forest
+- Regression Metrics (MAE, MSE, RMSE, R² Score)
+- Classification Metrics (Accuracy, Precision, Recall, F1 Score, Confusion Matrix, ROC Curve & AUC)
+- Bias-Variance Tradeoff (Underfitting vs Overfitting)
+- Cross-Validation (K-Fold)
+
+### Key Learnings
+- Supervised Learning maps labeled inputs (X) to known outputs (y) so the model can predict on unseen data.
+- Regression predicts continuous numbers; Classification predicts categories.
+- Accuracy alone can be misleading on imbalanced data — Precision, Recall, and F1 give a fuller picture.
+- Overfitting shows up as high training accuracy but poor test accuracy; underfitting shows up as poor performance on both.
+- K-Fold Cross-Validation gives a more reliable performance estimate than a single train/test split.
+
+--------------------------------------------------
+
+## ✅ Day 2 — Unsupervised Learning: Finding Patterns Without Labels
+
+### Topics Covered
+- What is Unsupervised Learning
+- Supervised vs Unsupervised Learning (comparison)
+- K-Means Clustering
+- Choosing K (Elbow Method & Silhouette Score)
+- Hierarchical Clustering (Dendrograms)
+- DBSCAN (Density-Based Clustering & Outlier Detection)
+- Dimensionality Reduction with PCA (Principal Component Analysis)
+- Combining PCA + Clustering
+
+### Key Learnings
+- Unsupervised Learning discovers hidden structure in data with no labels provided.
+- K-Means groups data into K clusters by iteratively updating centroids; the Elbow Method and Silhouette Score help choose K.
+- Hierarchical Clustering doesn't require choosing K upfront and visualizes merges via a dendrogram.
+- DBSCAN finds clusters based on density and automatically flags outliers as noise.
+- PCA reduces the number of features while preserving as much variance (information) as possible — useful for visualization and speeding up downstream models.
+- There's no ground-truth accuracy in unsupervised learning — evaluation relies on internal metrics and domain judgment.
