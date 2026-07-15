@@ -132,3 +132,86 @@ https://github.com/Sara12-2/Study_Smart_AI
 - Mini-Batch Gradient Descent balances speed and stability in deep learning.
 - Adam is the most widely used optimizer in modern AI (GPT, BERT, etc.).
 
+--------------------------------------------------
+
+# 📚 Module 3 — Data Analysis
+
+## ✅ Day 1 — Data Analysis: The First Step Toward Building Intelligent AI Systems
+
+### Topics Covered
+- What is Data Analysis
+- Why Data Analysis Matters for AI/ML
+- Types of Data (Qualitative, Quantitative, Structured, Unstructured)
+- Data Collection (Databases, APIs, Web Scraping, Surveys, Sensors/IoT)
+- Data Quality & Data Cleaning (Missing Values, Duplicates, Incorrect Data, Outliers)
+
+### Key Learnings
+- A model only learns what the data teaches it — data quality directly limits model quality.
+- Understanding data structure and behavior comes before choosing an algorithm.
+- Real-world datasets are rarely clean; detecting issues early prevents downstream model failures.
+- The Data Analysis Workflow: Collect → Clean → Explore → Analyze Patterns → Extract Insights → Prepare for ML.
+
+--------------------------------------------------
+
+## ✅ Day 2 — Exploratory Data Analysis (EDA) & Data Preprocessing: Turning Raw Data Into Model-Ready Data
+
+### Topics Covered
+- Exploratory Data Analysis (Summary Statistics, Distributions, Relationships, Missing Values/Outliers)
+- Data Visualization (Histogram, Bar Chart, Line Chart, Scatter Plot, Box Plot, Heatmap)
+- Feature Engineering (Feature Selection, Feature Creation, Encoding Categorical Variables)
+- Data Preprocessing (Handling Missing Values, Encoding, Feature Scaling, Normalization, Standardization)
+- Data Splitting (Training, Validation, Test Sets)
+- Essential Python Libraries (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn)
+
+### Key Learnings
+- EDA answers the core question: "What story is the data trying to tell?"
+- Visualizations reveal patterns and anomalies that raw numbers alone hide.
+- Well-engineered features often improve performance more than switching algorithms.
+- Normalization and Standardization ensure numerical features are on comparable scales before training.
+- Splitting data into train/validation/test sets measures true generalization, not memorization.
+- Full pipeline: Raw Data → Data Cleaning → EDA → Feature Engineering → Encoding & Scaling → Train/Val/Test Split → ML Model.
+
+--------------------------------------------------
+
+# 📚 Module 4 — Machine Learning
+
+## ✅ Day 1 — Supervised Learning: Teaching Machines with Labeled Data
+
+### Topics Covered
+- What is Supervised Learning
+- Regression vs Classification
+- Linear Regression (predicting a continuous number)
+- Classification Algorithms: Logistic Regression, K-Nearest Neighbors, Decision Tree, Random Forest
+- Regression Metrics (MAE, MSE, RMSE, R² Score)
+- Classification Metrics (Accuracy, Precision, Recall, F1 Score, Confusion Matrix, ROC Curve & AUC)
+- Bias-Variance Tradeoff (Underfitting vs Overfitting)
+- Cross-Validation (K-Fold)
+
+### Key Learnings
+- Supervised Learning maps labeled inputs (X) to known outputs (y) so the model can predict on unseen data.
+- Regression predicts continuous numbers; Classification predicts categories.
+- Accuracy alone can be misleading on imbalanced data — Precision, Recall, and F1 give a fuller picture.
+- Overfitting shows up as high training accuracy but poor test accuracy; underfitting shows up as poor performance on both.
+- K-Fold Cross-Validation gives a more reliable performance estimate than a single train/test split.
+
+--------------------------------------------------
+
+## ✅ Day 2 — Unsupervised Learning: Finding Patterns Without Labels
+
+### Topics Covered
+- What is Unsupervised Learning
+- Supervised vs Unsupervised Learning (comparison)
+- K-Means Clustering
+- Choosing K (Elbow Method & Silhouette Score)
+- Hierarchical Clustering (Dendrograms)
+- DBSCAN (Density-Based Clustering & Outlier Detection)
+- Dimensionality Reduction with PCA (Principal Component Analysis)
+- Combining PCA + Clustering
+
+### Key Learnings
+- Unsupervised Learning discovers hidden structure in data with no labels provided.
+- K-Means groups data into K clusters by iteratively updating centroids; the Elbow Method and Silhouette Score help choose K.
+- Hierarchical Clustering doesn't require choosing K upfront and visualizes merges via a dendrogram.
+- DBSCAN finds clusters based on density and automatically flags outliers as noise.
+- PCA reduces the number of features while preserving as much variance (information) as possible — useful for visualization and speeding up downstream models.
+- There's no ground-truth accuracy in unsupervised learning — evaluation relies on internal metrics and domain judgment.
