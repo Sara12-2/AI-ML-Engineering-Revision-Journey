@@ -215,3 +215,92 @@ https://github.com/Sara12-2/Study_Smart_AI
 - DBSCAN finds clusters based on density and automatically flags outliers as noise.
 - PCA reduces the number of features while preserving as much variance (information) as possible — useful for visualization and speeding up downstream models.
 - There's no ground-truth accuracy in unsupervised learning — evaluation relies on internal metrics and domain judgment.
+
+--------------------------------------------------
+
+# 📚 Module 5 — Deep Learning
+
+## ✅ Day 1 — Artificial Neural Networks (ANN): Built From Scratch with NumPy
+
+### Topics Covered
+- What is a Neural Network (`activation(weighted_sum + bias)`)
+- The Perceptron (Rosenblatt, 1958) & its linear decision boundary
+- Network Architecture (Input, Hidden, Output layers)
+- Activation Functions (Sigmoid, Tanh, ReLU, Leaky ReLU, Softmax)
+- Forward Propagation
+- Loss Functions (MSE, Binary Cross-Entropy, Categorical Cross-Entropy)
+- Backpropagation & Gradient Descent (full NumPy `DenseNN` engine)
+- Batch vs Mini-Batch vs Stochastic Gradient Descent
+- Epochs, Batch Size & Iterations
+- Optimizers (SGD, Momentum, RMSProp, Adam)
+- Weight Initialization (Zero, Xavier/Glorot, He)
+- Vanishing & Exploding Gradients
+- Preventing Overfitting (Dropout, L1/L2 Regularization, Early Stopping, Batch Normalization)
+- Learning Rate & Learning Rate Scheduling (Step Decay, Exponential Decay)
+- Hyperparameter Tuning (Grid Search)
+- Practice: Classification & Regression with `MLPClassifier` / `MLPRegressor`
+
+### Key Learnings
+- A neural network is just layers of neurons computing `activation(W·x + b)`, trained end-to-end.
+- Activation functions introduce the non-linearity that lets networks learn complex functions — without them, any number of stacked layers collapses into one linear transformation.
+- Forward propagation produces predictions; backpropagation (chain rule) computes how to fix the weights; gradient descent applies the fix.
+- Mini-batch gradient descent is the practical default, balancing the stability of full-batch and the speed of stochastic updates.
+- Adam (Momentum + RMSProp) is the most widely used optimizer today.
+- He initialization suits ReLU networks; Xavier suits Sigmoid/Tanh — poor initialization (e.g. all-zero) can stall training entirely.
+- Deep sigmoid networks suffer from vanishing gradients; ReLU keeps gradients far more stable across depth.
+- Dropout, L2 regularization, early stopping, and batch normalization each fight overfitting in a different way.
+
+--------------------------------------------------
+
+## ✅ Day 2 — Convolutional Neural Networks (CNN): Deep Learning for Images
+
+### Topics Covered
+- Why CNN vs Fully Connected Networks (preserving spatial structure, weight sharing)
+- The Convolution Operation — Filters/Kernels
+- Stride & Padding (`output = (input − kernel + 2×padding) / stride + 1`)
+- Pooling (Max & Average)
+- Feature Maps — Multiple Filters per Layer
+- Flatten Layer & Fully Connected Layer
+- Practice: Training a `MiniCNN` From Scratch (Conv → ReLU → MaxPool → Flatten → Dense → Sigmoid) on real digit images
+- Image Preprocessing (Resizing, Normalization, Grayscale, Cropping)
+- Data Augmentation (Flips, Rotation, Brightness, Noise)
+- Transfer Learning (Feature Extraction vs Fine-Tuning)
+- Popular CNN Architectures (LeNet-5, AlexNet, VGG, GoogLeNet/Inception, ResNet, DenseNet, EfficientNet)
+- Computer Vision Applications (Image Classification, Object Detection/YOLO basics, Semantic Segmentation)
+
+### Key Learnings
+- CNNs preserve spatial structure and share weights via filters/kernels, unlike fully connected networks — dramatically fewer parameters for image-sized inputs.
+- Stride controls how far a filter moves each step; padding controls output size and edge coverage.
+- Pooling shrinks feature maps and adds a degree of translation invariance.
+- A single conv layer applies many filters, producing multiple feature maps that each capture a different pattern.
+- After Conv+Pool stages, a Flatten layer feeds into Dense layers for the final prediction — the same ANN mechanics from Day 1.
+- Data augmentation and transfer learning are the two main tools for getting strong results without massive labeled datasets.
+- ResNet's skip connections were the key innovation that let networks go extremely deep without vanishing gradients.
+
+--------------------------------------------------
+
+## ✅ Day 3 — Sequential Models: RNN, LSTM & GRU
+
+### Topics Covered
+- Sequential Models — what Sequential Data is (Time Series, Text, Speech, Video Data)
+- RNN (Recurrent Neural Network) — concept, architecture, Hidden State, Recurrent Connections, Forward Pass
+- RNN Limitations — Vanishing Gradient Problem, Exploding Gradient Problem
+- LSTM (Long Short-Term Memory) — idea, architecture, Cell State, Hidden State, Forget/Input/Output Gates
+- How LSTM Maintains Long-Term Memory; RNN vs LSTM
+- GRU (Gated Recurrent Unit) — concept, Update Gate, Reset Gate, architecture; GRU vs LSTM
+- Bidirectional RNN — Forward RNN, Backward RNN, architecture, Applications (Translation, NER, Text Classification)
+- Sequence-to-Sequence Models (Seq2Seq) — Encoder-Decoder Architecture, Encoder's role, Decoder's role, Context Vector
+- Applications: Machine Translation, Text Summarization, Chatbots
+
+### Key Learnings
+- Sequential Data (time series, text, speech, video) has order that matters — regular ANNs/CNNs can't capture this, which is why recurrent architectures exist.
+- RNNs carry a Hidden State forward through time via recurrent connections, letting past context influence future predictions.
+- Plain RNNs struggle with long sequences due to Vanishing/Exploding Gradients during Backpropagation Through Time (BPTT).
+- LSTM solves this with a separate Cell State plus Forget, Input, and Output Gates that explicitly control what to remember, add, or expose at each step.
+- GRU simplifies LSTM into just two gates (Update, Reset) with no separate cell state — fewer parameters, often faster to train, comparable performance.
+- Bidirectional RNNs combine a forward and backward pass so every position has access to both past and future context — valuable for translation, NER, and text classification.
+- Seq2Seq (Encoder-Decoder) architectures handle variable-length input/output tasks by compressing the input into a Context Vector that the Decoder uses to generate output token by token — powering translation, summarization, and chatbots.
+
+--------------------------------------------------
+
+*(Day 4 — Attention Mechanism, Transformers & Generative Models — coming tomorrow, will complete Module 5.)*
