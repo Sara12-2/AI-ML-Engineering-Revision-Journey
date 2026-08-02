@@ -329,7 +329,7 @@ https://github.com/Sara12-2/Study_Smart_AI
 
 --------------------------------------------------
 
-## 🎉 Module 5 Complete: Deep Learning Fully Revised
+##  Module 5 Complete: Deep Learning Fully Revised
 
 Four days, from a single Perceptron to Transformers and Generative AI — a complete Deep Learning revision:
 
@@ -338,4 +338,289 @@ Four days, from a single Perceptron to Transformers and Generative AI — a comp
 - **Day 3:** Sequential Models — RNN, LSTM, GRU, Bidirectional RNN, Seq2Seq
 - **Day 4:** Attention, Transformers & Generative AI (Autoencoders, VAE, GANs)
 
-**Next up:** NLP, advanced Computer Vision, LLMs, and RAG.
+# 📚 Module 6 — Natural Language Processing (NLP)
+
+## ✅ Day 1 — NLP Fundamentals: From Raw Text to Modern LLM Foundations
+
+### 📖 Topics Covered
+
+#### 🔹 NLP Fundamentals & Real-World Applications
+- Chatbots
+- Search Engines
+- Machine Translation
+- Sentiment Analysis
+- AI Assistants
+
+#### 🔹 Text Preprocessing & Normalization
+- Text Cleaning
+- Text Normalization
+- Stopword Removal
+- Stemming vs Lemmatization
+- Tokenization
+
+#### 🔹 Tokenization Techniques
+- Word Tokenization
+- Sentence Tokenization
+- Subword Tokenization
+- Byte Pair Encoding (BPE)
+- WordPiece
+- SentencePiece
+
+#### 🔹 Classical Text Representation
+- One-Hot Encoding
+- Bag of Words (BoW)
+- TF-IDF
+
+#### 🔹 Word Embeddings
+- Word2Vec
+  - CBOW
+  - Skip-Gram
+- GloVe
+- FastText
+- Cosine Similarity
+- Static vs Contextual Embeddings
+
+#### 🔹 Transformer Foundations
+- Limitations of RNNs & LSTMs
+- Attention Mechanism
+- Self-Attention
+- Query, Key & Value (QKV)
+
+#### 🔹 Evolution of NLP
+```
+BoW / TF-IDF
+        ↓
+Word Embeddings
+        ↓
+Contextual Embeddings
+        ↓
+Transformers
+        ↓
+Large Language Models (LLMs)
+```
+
+---
+
+### 💡 Key Learnings
+
+- Traditional methods like **BoW** and **TF-IDF** rely on word frequency rather than meaning.
+- Word embeddings such as **Word2Vec**, **GloVe**, and **FastText** capture semantic relationships between words.
+- Static embeddings assign one vector per word regardless of context, making them ineffective for polysemous words.
+- Subword tokenization methods (**BPE**, **WordPiece**, **SentencePiece**) effectively handle Out-of-Vocabulary (OOV) words.
+- Transformers replaced recurrence with **Self-Attention**, enabling parallel sequence processing.
+- The **Query-Key-Value (QKV)** mechanism allows each token to focus on the most relevant parts of a sentence.
+- NLP has evolved from simple word counting techniques to powerful Large Language Models capable of reasoning and generation.
+
+---
+
+## ✅ Day 2 — Transformers, Language Models & LLM Foundations
+
+### 📖 Topics Covered
+
+#### 🔹 Transformers & Attention
+- Self-Attention
+- Why Transformers replaced RNNs & LSTMs
+- Parallel Processing
+- Encoder Architecture
+- Decoder Architecture
+- Transformers as the foundation of modern LLMs
+
+#### 🔹 Modern Tokenization
+- Subword Tokenization
+- Byte Pair Encoding (BPE)
+- WordPiece
+- SentencePiece
+
+#### 🔹 Pretrained Language Models
+- BERT
+- GPT
+- T5
+- BART
+
+#### 🔹 Transfer Learning
+- Large-scale Pretraining
+- Fine-tuning for downstream tasks
+- Task adaptation
+
+#### 🔹 The NLP Paradigm Shift
+Instead of building a separate model for every NLP task:
+- Prompt Engineering
+- Fine-tuning
+- Retrieval-Augmented Generation (RAG)
+
+#### 🔹 Practical NLP Applications
+- Text Classification
+- Semantic Search
+- Question Answering
+- Text Summarization
+- Chatbots
+- AI Assistants
+- Document Intelligence
+
+#### 🔹 NLP Libraries & Frameworks
+- NLTK
+- spaCy
+- Hugging Face Transformers
+- Sentence Transformers
+
+#### 🔹 Bridge to Generative AI
+- Embeddings
+- Vector Databases
+- Context Windows
+- Prompt Engineering
+- Fine-tuning vs RAG
+
+---
+
+### 💡 Key Learnings
+
+- NLP has evolved from **counting words** to **understanding meaning**, **capturing context**, and finally powering intelligent AI systems.
+- Self-Attention enables every token to interact with every other token, allowing richer contextual understanding.
+- **BERT** is bidirectional, making it highly effective for language understanding tasks.
+- **GPT** predicts the next token from left to right, making it ideal for text generation.
+- Modern tokenization techniques eliminate most Out-of-Vocabulary (OOV) issues.
+- Transfer Learning transformed NLP by allowing pretrained models to be adapted for numerous downstream tasks.
+- Hugging Face made state-of-the-art NLP models widely accessible through a unified ecosystem.
+- Modern LLM applications are primarily customized using **Prompt Engineering**, **Fine-tuning**, or **RAG**.
+
+---
+
+# 🧠 Module 6 Summary
+
+### Evolution of NLP
+
+```
+Bag of Words
+      ↓
+TF-IDF
+      ↓
+Word2Vec / GloVe / FastText
+      ↓
+Contextual Embeddings
+      ↓
+Transformers
+      ↓
+BERT / GPT / T5 / BART
+      ↓
+Large Language Models (LLMs)
+      ↓
+RAG • Fine-tuning • AI Agents
+```
+
+---
+# 📚 Module 7 — Computer Vision
+
+## ✅ Day 1 — Computer Vision Fundamentals
+
+### 📖 Topics Covered
+
+#### Image Fundamentals
+- Pixels & RGB Channels
+- Grayscale Conversion
+- Image Resolution
+- Color Spaces
+  - RGB
+  - HSV
+  - LAB
+
+---
+
+#### OpenCV & Image Preprocessing
+- Image Resizing
+- Cropping
+- Normalization
+- Filtering & Noise Reduction
+- Data Augmentation
+  - Horizontal & Vertical Flips
+  - Rotation
+  - Brightness Adjustment
+  - Noise Injection
+
+---
+
+#### CNNs & Transfer Learning
+- Convolutional Neural Networks (CNNs)
+- Automatic Feature Extraction
+- Pretrained Models
+  - ResNet
+  - EfficientNet
+  - MobileNet
+- Feature Extraction
+- Fine-tuning for Custom Tasks
+
+---
+
+#### Core Computer Vision Tasks
+- Image Classification
+- Object Detection (YOLO)
+- OCR (Optical Character Recognition)
+- Face Detection & Recognition
+- MediaPipe for Real-Time ML Pipelines
+
+---
+
+####  Evaluation Metrics
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- IoU (Intersection over Union)
+- mAP (Mean Average Precision)
+
+---
+
+####  Deployment & Integration
+- Flask / FastAPI Model Serving
+- React / Next.js Frontend Integration
+- Docker Containerization
+- Production-Ready AI Systems
+
+---
+##  Key Learnings
+
+- Digital images are represented as **matrices of pixels (Height × Width × Channels)**, forming the foundation of Computer Vision.
+- RGB images contain three channels (**Red, Green, Blue**), while grayscale images contain a single intensity channel.
+- OpenCV is the standard library for image preprocessing, including resizing, normalization, filtering, cropping, and augmentation.
+- CNNs automatically learn hierarchical visual features:
+  ```
+  Edges
+      ↓
+  Shapes
+      ↓
+  Textures
+      ↓
+  Objects
+      ↓
+  High-Level Concepts
+  ```
+- Transfer Learning with pretrained models such as **ResNet**, **EfficientNet**, and **MobileNet** significantly reduces training time while improving accuracy.
+- Feature Extraction freezes pretrained layers, whereas Fine-tuning updates model weights for domain-specific datasets.
+- YOLO (You Only Look Once) performs object detection in a single forward pass, enabling real-time inference.
+- IoU (Intersection over Union) measures the overlap between predicted and ground-truth bounding boxes.
+- mAP (Mean Average Precision) is the primary benchmark for evaluating object detection models.
+- Production AI systems combine **FastAPI/Flask**, **React/Next.js**, and **Docker** to deliver scalable, deployable Computer Vision applications.
+- Revisiting previous Computer Vision projects reinforces theoretical concepts through practical implementation.
+
+---
+
+#  Module 7 Summary
+
+### Computer Vision Pipeline
+
+```text
+Image
+   ↓
+Preprocessing
+   ↓
+Data Augmentation
+   ↓
+CNN / Transfer Learning
+   ↓
+Prediction
+   ↓
+Evaluation
+   ↓
+Deployment
+```
+
+---
