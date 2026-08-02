@@ -1,4 +1,4 @@
-# AI-ML-Engineering-Revision-Journey 🚀
+# AI-ML-Engineering-Revision-Journey 
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![ML](https://img.shields.io/badge/ML-Engineering-red.svg)
@@ -621,6 +621,264 @@ Prediction
 Evaluation
    ↓
 Deployment
+```
+
+---
+# Module 8 — Large Language Models (LLMs)
+
+## Day 1 — Introduction to Large Language Models (LLMs)
+
+### Topics Covered
+
+#### What are LLMs?
+
+- Advanced AI models trained on massive text data
+  - Books
+  - Articles
+  - Websites
+  - Code
+- Learn language patterns, context, and relationships between words
+- Next Token Prediction
+
+---
+
+#### Why Learn LLMs?
+
+- Foundation of modern AI-powered systems
+- Building intelligent chatbots
+- AI Assistants
+- Knowledge Retrieval Systems
+- Coding Assistants
+- AI Agents
+
+---
+
+#### Where are LLMs Used?
+
+- Chatbots & Virtual Assistants
+- Code Generation & Debugging
+- Text Summarization
+- Content Creation
+- Translation
+- Question Answering
+- Document Analysis
+- Search Systems
+- Business Process Automation
+
+---
+
+#### Popular LLM Families
+
+- GPT (OpenAI)
+- LLaMA (Meta)
+- Claude (Anthropic)
+- Gemini (Google)
+- Mistral
+- DeepSeek
+
+---
+
+## Key Learnings
+
+- LLMs are trained on internet-scale datasets containing trillions of tokens.
+- Next Token Prediction is the core learning objective behind modern LLMs.
+- Scaling data, parameters, and compute leads to emergent reasoning abilities.
+- LLMs understand context, follow instructions, and perform diverse language tasks.
+- Understanding LLMs is essential for modern AI Engineers.
+- Different LLM families have different architectures, training strategies, and strengths.
+
+---
+
+# Day 2 — Transformers & Tokenization
+
+## Topics Covered
+
+### Transformers
+
+- Why Transformers replaced RNNs & LSTMs
+- Parallel Processing
+- Long-Range Context Understanding
+- Transformer Architecture
+- Encoder vs Decoder
+- Self-Attention
+- Multi-Head Attention
+- Query (Q), Key (K), Value (V)
+- Positional Encoding
+- Feed Forward Network (FFN)
+- Residual Connections
+- Layer Normalization
+- Encoder-Only Models (BERT)
+- Decoder-Only Models (GPT)
+- Encoder-Decoder Models (T5)
+
+---
+
+### Tokenization
+
+- What is Tokenization?
+- Why Tokenization is Needed
+- Character-Level Tokenization
+- Word-Level Tokenization
+- Subword Tokenization
+- Byte Pair Encoding (BPE)
+- WordPiece
+- SentencePiece
+- Tiktoken
+- Special Tokens
+- Vocabulary & Token IDs
+- Context Window
+- Token Limits
+
+---
+
+## Key Learnings
+
+- Transformers process sequences in parallel, making them faster and more effective than RNNs and LSTMs.
+- Self-Attention allows every token to interact with every other token.
+- Multi-Head Attention captures multiple linguistic relationships simultaneously.
+- Query, Key, and Value form the core attention mechanism.
+- Positional Encoding preserves word order information.
+- Encoder-only models excel at understanding, Decoder-only models excel at generation, while Encoder-Decoder models perform sequence-to-sequence tasks.
+- Tokenization is the first step in every LLM pipeline.
+- BPE, WordPiece, and SentencePiece solve the Out-of-Vocabulary problem.
+- Tokens directly affect model cost, latency, and context window utilization.
+
+---
+
+# Day 3 — LLM Training & Fine-Tuning
+
+## Topics Covered
+
+### LLM Training Process
+
+- Data Preparation
+- Pre-Training
+- Next Token Prediction
+- Parameters & Weights
+- Loss Function
+- Optimization
+- Backpropagation
+
+---
+
+### Fine-Tuning & Alignment
+
+- Fine-Tuning
+- Instruction Tuning
+- RLHF (Reinforcement Learning from Human Feedback)
+- LoRA (Low-Rank Adaptation)
+- PEFT (Parameter-Efficient Fine-Tuning)
+- Supervised Fine-Tuning (SFT)
+
+---
+
+### Training Flow
+
+```text
+Raw Data
+    ↓
+Data Processing
+    ↓
+Pre-Training
+    ↓
+Fine-Tuning
+    ↓
+Alignment
+    ↓
+Production-Ready LLM
+```
+
+---
+
+## Key Learnings
+
+- LLMs learn patterns from massive datasets instead of manually programmed language rules.
+- Pre-training builds general language understanding using self-supervised learning.
+- Parameters are updated through backpropagation to minimize the loss function.
+- Fine-tuning adapts pretrained models for specific domains and tasks.
+- Instruction Tuning improves the model's ability to follow human instructions.
+- RLHF aligns model outputs with human preferences.
+- LoRA and PEFT enable efficient fine-tuning using limited computational resources.
+
+---
+
+# Day 4 — Prompt Engineering & Interacting with LLMs
+
+## Topics Covered
+
+### What is Prompt Engineering?
+
+- Designing clear, structured prompts
+- Context-rich instructions
+- Clear objectives
+- Output formatting
+- Constraints
+
+---
+
+### Prompt Components
+
+- Role Definition
+- Task Instruction
+- Context
+- Constraints
+- Output Format
+
+---
+
+### Prompting Techniques
+
+- Zero-Shot Prompting
+- One-Shot Prompting
+- Few-Shot Prompting
+- Role-Based Prompting
+- Chain-of-Thought (CoT)
+- ReAct
+- Structured Output Prompting
+
+---
+
+### Real-World Applications
+
+- AI Chatbots
+- RAG Systems
+- Coding Assistants
+- AI Agents
+- Enterprise AI Solutions
+
+---
+
+## Key Learnings
+
+- Prompt quality directly impacts LLM performance.
+- Effective prompts include clear instructions, relevant context, constraints, and output format.
+- Few-shot prompting guides models using examples.
+- Chain-of-Thought prompting improves reasoning on complex tasks.
+- Role-based prompting changes the model's behavior and expertise.
+- ReAct combines reasoning with external tool usage.
+- Structured outputs enable seamless integration with applications.
+- Prompt Engineering is one of the most valuable skills for AI Engineers.
+
+---
+
+# Module 8 Summary
+
+## LLM Development Pipeline
+
+```text
+Raw Data
+    ↓
+Pre-Training
+    ↓
+Transformer Model
+    ↓
+Fine-Tuning
+    ↓
+Prompt Engineering
+    ↓
+RAG / AI Agents
+    ↓
+Production Applications
 ```
 
 ---
