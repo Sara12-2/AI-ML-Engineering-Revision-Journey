@@ -882,3 +882,108 @@ Production Applications
 ```
 
 ---
+# 📚 Module 9 — Vector Databases & MLOps
+
+## ✅ Day 1 — Vector Databases: The Foundation of Modern RAG
+
+### 📖 Topics Covered
+
+#### 🔹 Why Vector Databases Matter
+
+- LLMs have static knowledge and a training cutoff.
+- They cannot directly access private documents or real-time data.
+- Vector databases enable semantic search and Retrieval-Augmented Generation (RAG).
+
+#### 🔹 Vectors & Embeddings
+
+- Convert text, images, and documents into numerical vectors.
+- Embeddings capture the semantic meaning of data.
+- Similar concepts have closer vector representations.
+
+#### 🔹 Semantic Search
+
+- Understands the meaning behind user queries.
+- Retrieves contextually relevant information.
+- More effective than traditional keyword-based search for semantic tasks.
+
+#### 🔹 Similarity Metrics
+
+- **Cosine Similarity:** Measures similarity based on vector direction.
+- **Euclidean Distance:** Measures the distance between vectors.
+- **Dot Product:** Measures similarity through vector multiplication.
+
+#### 🔹 Vector Indexing
+
+- **HNSW:** Multi-layer graph structure for fast and accurate search.
+- **IVF:** Clusters vectors and searches relevant clusters.
+- **PQ:** Compresses vectors to reduce memory usage.
+
+#### 🔹 Popular Vector Databases & Libraries
+
+| Technology | Common Use |
+|---|---|
+| **FAISS** | Research and prototyping |
+| **ChromaDB** | Lightweight local AI and RAG applications |
+| **Pinecone** | Fully managed and scalable vector search |
+| **Weaviate** | Hybrid search and AI applications |
+| **Milvus** | High-performance and large-scale vector search |
+
+### 💡 Key Learnings
+
+- Vector databases act as the knowledge retrieval layer for modern AI systems.
+- Embeddings convert unstructured data into numerical representations that capture meaning.
+- Semantic search understands intent rather than relying only on exact keywords.
+- Approximate Nearest Neighbor (ANN) search enables fast similarity search at scale.
+- Vector databases are essential components of modern RAG and production AI applications.
+
+---
+
+## ✅ Day 2 — From Embeddings to Intelligent Information Retrieval
+
+### 📖 Topics Covered
+
+#### 🔹 Embedding Generation
+
+- Convert documents and user queries into numerical vectors.
+- Embeddings capture semantic meaning for similarity-based retrieval.
+
+#### 🔹 Document Chunking
+
+- Large documents are split into smaller, meaningful chunks.
+- Improves retrieval accuracy.
+- Provides more relevant context to the LLM.
+- Helps prevent unnecessary information from being passed to the model.
+
+#### 🔹 Metadata
+
+- Store additional information such as:
+  - Source
+  - Page number
+  - Category
+  - Document ID
+  - File name
+- Enables precise filtering and more accurate retrieval.
+
+#### 🔹 FAISS & ChromaDB
+
+- **FAISS:** Provides fast similarity search for large collections of vectors.
+- **ChromaDB:** Simple and efficient vector storage for semantic search and RAG applications.
+
+#### 🔹 Similarity Retrieval
+
+The basic retrieval process:
+
+```text
+User Query
+     ↓
+Query Embedding
+     ↓
+Vector Similarity Search
+     ↓
+Retrieve Relevant Chunks
+     ↓
+Relevant Context
+     ↓
+LLM
+     ↓
+Generated Answer
