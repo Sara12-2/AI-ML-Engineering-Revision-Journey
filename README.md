@@ -987,3 +987,156 @@ Relevant Context
 LLM
      ↓
 Generated Answer
+
+---
+
+# 📚 Module 10 — Retrieval-Augmented Generation (RAG)
+
+## ✅ Day 1 — RAG: Bridging LLMs with External Knowledge
+
+### 📖 Topics Covered
+
+- What is RAG (Retrieval-Augmented Generation)
+- Why RAG is Needed
+  - LLMs have static knowledge
+  - LLMs can produce hallucinations
+  - LLMs cannot directly access private data
+- How RAG Works
+  - Query → Embedding → Vector Database → Retrieve Context → LLM → Response
+- Real-World Applications
+  - AI Chatbots
+  - Enterprise Assistants
+  - Document Question Answering
+  - Customer Support Systems
+
+### 💡 Key Learnings
+
+- RAG combines LLM reasoning with external knowledge retrieval.
+- Retrieved information helps ground LLM responses in relevant data.
+- Embeddings and vector databases enable semantic search.
+- RAG powers modern AI applications that require accurate and domain-specific information.
+
+---
+
+## ✅ Day 2 — Practical RAG Pipeline
+
+### 📖 Topics Covered
+
+#### 🔹 Stage 1 — Indexing Pipeline
+
+```text
+Collect Documents
+       ↓
+Clean Data
+       ↓
+Chunk Documents
+       ↓
+Generate Embeddings
+       ↓
+Store in Vector Database
+```
+
+#### 🔹 Stage 2 — Retrieval & Generation Pipeline
+
+```text
+User Query
+     ↓
+Query Embedding
+     ↓
+Vector Search
+     ↓
+Retrieve Relevant Context
+     ↓
+LLM
+     ↓
+Generated Response
+```
+
+#### 🔹 Complete RAG Flow
+
+```text
+Raw Documents
+      ↓
+Data Cleaning
+      ↓
+Document Chunking
+      ↓
+Embedding Generation
+      ↓
+Vector Database
+      ↓
+User Query
+      ↓
+Query Embedding
+      ↓
+Similarity Search
+      ↓
+Relevant Context
+      ↓
+LLM
+      ↓
+Final Response
+```
+
+### 💡 Key Learnings
+
+- Chunking strategy directly impacts retrieval quality.
+- Better embeddings improve semantic search accuracy.
+- Vector databases enable fast similarity search.
+- Retrieved context helps reduce unsupported LLM responses.
+- High-quality data leads to better RAG performance.
+- A well-designed indexing and retrieval pipeline is essential for effective RAG systems.
+
+---
+
+## ✅ Day 3 — RAG Evaluation Metrics
+
+### 📖 Topics Covered
+
+#### 🔹 Why RAG Evaluation is Needed
+
+- Evaluate retrieval quality.
+- Measure the accuracy and reliability of generated responses.
+- Identify weaknesses in the retrieval and generation pipeline.
+- Improve RAG systems for production use.
+
+#### 🔹 Faithfulness
+
+Measures whether the generated answer is supported by the retrieved context.
+
+#### 🔹 Answer Relevance
+
+Measures whether the generated response actually addresses the user's query.
+
+#### 🔹 Context Precision
+
+Evaluates whether the retrieved chunks are relevant to the user's query.
+
+#### 🔹 Context Recall
+
+Measures whether all the necessary information required to answer the query was successfully retrieved.
+
+#### 🔹 Evaluation Flow
+
+```text
+User Query
+     ↓
+Retrieved Context
+     ↓
+Generated Response
+     ↓
+Evaluation Metrics
+     ↓
+Identify Weaknesses
+     ↓
+Improve RAG Pipeline
+```
+
+### 💡 Key Learnings
+
+- **Faithfulness** checks whether answers are grounded in retrieved context.
+- **Answer Relevance** measures whether the response addresses the query.
+- **Context Precision** evaluates retrieved chunk quality.
+- **Context Recall** measures whether all necessary information was retrieved.
+- Evaluation helps identify weaknesses in both retrieval and generation.
+- Proper evaluation is essential for building reliable and production-ready RAG systems.
