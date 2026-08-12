@@ -882,3 +882,261 @@ Production Applications
 ```
 
 ---
+# 📚 Module 9 — Vector Databases & MLOps
+
+## ✅ Day 1 — Vector Databases: The Foundation of Modern RAG
+
+### 📖 Topics Covered
+
+#### 🔹 Why Vector Databases Matter
+
+- LLMs have static knowledge and a training cutoff.
+- They cannot directly access private documents or real-time data.
+- Vector databases enable semantic search and Retrieval-Augmented Generation (RAG).
+
+#### 🔹 Vectors & Embeddings
+
+- Convert text, images, and documents into numerical vectors.
+- Embeddings capture the semantic meaning of data.
+- Similar concepts have closer vector representations.
+
+#### 🔹 Semantic Search
+
+- Understands the meaning behind user queries.
+- Retrieves contextually relevant information.
+- More effective than traditional keyword-based search for semantic tasks.
+
+#### 🔹 Similarity Metrics
+
+- **Cosine Similarity:** Measures similarity based on vector direction.
+- **Euclidean Distance:** Measures the distance between vectors.
+- **Dot Product:** Measures similarity through vector multiplication.
+
+#### 🔹 Vector Indexing
+
+- **HNSW:** Multi-layer graph structure for fast and accurate search.
+- **IVF:** Clusters vectors and searches relevant clusters.
+- **PQ:** Compresses vectors to reduce memory usage.
+
+#### 🔹 Popular Vector Databases & Libraries
+
+| Technology | Common Use |
+|---|---|
+| **FAISS** | Research and prototyping |
+| **ChromaDB** | Lightweight local AI and RAG applications |
+| **Pinecone** | Fully managed and scalable vector search |
+| **Weaviate** | Hybrid search and AI applications |
+| **Milvus** | High-performance and large-scale vector search |
+
+### 💡 Key Learnings
+
+- Vector databases act as the knowledge retrieval layer for modern AI systems.
+- Embeddings convert unstructured data into numerical representations that capture meaning.
+- Semantic search understands intent rather than relying only on exact keywords.
+- Approximate Nearest Neighbor (ANN) search enables fast similarity search at scale.
+- Vector databases are essential components of modern RAG and production AI applications.
+
+---
+
+## ✅ Day 2 — From Embeddings to Intelligent Information Retrieval
+
+### 📖 Topics Covered
+
+#### 🔹 Embedding Generation
+
+- Convert documents and user queries into numerical vectors.
+- Embeddings capture semantic meaning for similarity-based retrieval.
+
+#### 🔹 Document Chunking
+
+- Large documents are split into smaller, meaningful chunks.
+- Improves retrieval accuracy.
+- Provides more relevant context to the LLM.
+- Helps prevent unnecessary information from being passed to the model.
+
+#### 🔹 Metadata
+
+- Store additional information such as:
+  - Source
+  - Page number
+  - Category
+  - Document ID
+  - File name
+- Enables precise filtering and more accurate retrieval.
+
+#### 🔹 FAISS & ChromaDB
+
+- **FAISS:** Provides fast similarity search for large collections of vectors.
+- **ChromaDB:** Simple and efficient vector storage for semantic search and RAG applications.
+
+#### 🔹 Similarity Retrieval
+
+The basic retrieval process:
+
+```text
+User Query
+     ↓
+Query Embedding
+     ↓
+Vector Similarity Search
+     ↓
+Retrieve Relevant Chunks
+     ↓
+Relevant Context
+     ↓
+LLM
+     ↓
+Generated Answer
+
+---
+
+# 📚 Module 10 — Retrieval-Augmented Generation (RAG)
+
+## ✅ Day 1 — RAG: Bridging LLMs with External Knowledge
+
+### 📖 Topics Covered
+
+- What is RAG (Retrieval-Augmented Generation)
+- Why RAG is Needed
+  - LLMs have static knowledge
+  - LLMs can produce hallucinations
+  - LLMs cannot directly access private data
+- How RAG Works
+  - Query → Embedding → Vector Database → Retrieve Context → LLM → Response
+- Real-World Applications
+  - AI Chatbots
+  - Enterprise Assistants
+  - Document Question Answering
+  - Customer Support Systems
+
+### 💡 Key Learnings
+
+- RAG combines LLM reasoning with external knowledge retrieval.
+- Retrieved information helps ground LLM responses in relevant data.
+- Embeddings and vector databases enable semantic search.
+- RAG powers modern AI applications that require accurate and domain-specific information.
+
+---
+
+## ✅ Day 2 — Practical RAG Pipeline
+
+### 📖 Topics Covered
+
+#### 🔹 Stage 1 — Indexing Pipeline
+
+```text
+Collect Documents
+       ↓
+Clean Data
+       ↓
+Chunk Documents
+       ↓
+Generate Embeddings
+       ↓
+Store in Vector Database
+```
+
+#### 🔹 Stage 2 — Retrieval & Generation Pipeline
+
+```text
+User Query
+     ↓
+Query Embedding
+     ↓
+Vector Search
+     ↓
+Retrieve Relevant Context
+     ↓
+LLM
+     ↓
+Generated Response
+```
+
+#### 🔹 Complete RAG Flow
+
+```text
+Raw Documents
+      ↓
+Data Cleaning
+      ↓
+Document Chunking
+      ↓
+Embedding Generation
+      ↓
+Vector Database
+      ↓
+User Query
+      ↓
+Query Embedding
+      ↓
+Similarity Search
+      ↓
+Relevant Context
+      ↓
+LLM
+      ↓
+Final Response
+```
+
+### 💡 Key Learnings
+
+- Chunking strategy directly impacts retrieval quality.
+- Better embeddings improve semantic search accuracy.
+- Vector databases enable fast similarity search.
+- Retrieved context helps reduce unsupported LLM responses.
+- High-quality data leads to better RAG performance.
+- A well-designed indexing and retrieval pipeline is essential for effective RAG systems.
+
+---
+
+## ✅ Day 3 — RAG Evaluation Metrics
+
+### 📖 Topics Covered
+
+#### 🔹 Why RAG Evaluation is Needed
+
+- Evaluate retrieval quality.
+- Measure the accuracy and reliability of generated responses.
+- Identify weaknesses in the retrieval and generation pipeline.
+- Improve RAG systems for production use.
+
+#### 🔹 Faithfulness
+
+Measures whether the generated answer is supported by the retrieved context.
+
+#### 🔹 Answer Relevance
+
+Measures whether the generated response actually addresses the user's query.
+
+#### 🔹 Context Precision
+
+Evaluates whether the retrieved chunks are relevant to the user's query.
+
+#### 🔹 Context Recall
+
+Measures whether all the necessary information required to answer the query was successfully retrieved.
+
+#### 🔹 Evaluation Flow
+
+```text
+User Query
+     ↓
+Retrieved Context
+     ↓
+Generated Response
+     ↓
+Evaluation Metrics
+     ↓
+Identify Weaknesses
+     ↓
+Improve RAG Pipeline
+```
+
+### 💡 Key Learnings
+
+- **Faithfulness** checks whether answers are grounded in retrieved context.
+- **Answer Relevance** measures whether the response addresses the query.
+- **Context Precision** evaluates retrieved chunk quality.
+- **Context Recall** measures whether all necessary information was retrieved.
+- Evaluation helps identify weaknesses in both retrieval and generation.
+- Proper evaluation is essential for building reliable and production-ready RAG systems.
