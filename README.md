@@ -16,7 +16,7 @@ The goal is to strengthen Python fundamentals, data science libraries, machine l
 
 # 📅 Progress
 
-## ✅ Day 1 — Python Fundamentals (Data Model & Core Data Structures)
+## Day 1 — Python Fundamentals (Data Model & Core Data Structures)
 
 ### Topics Covered
 - Python Data Model (Objects & References)
@@ -35,7 +35,7 @@ The goal is to strengthen Python fundamentals, data science libraries, machine l
 
 ---
 
-## ✅ Day 2 — Python Fundamentals (Control Flow & Program Structure)
+##  Day 2 — Python Fundamentals (Control Flow & Program Structure)
 
 ### Topics Covered
 - Conditional Statements
@@ -58,7 +58,7 @@ The goal is to strengthen Python fundamentals, data science libraries, machine l
 - OOP helps build scalable and organized applications.
 
 ---
-## ✅ Day 3 — Python Fundamentals (Project: Study Smart AI)
+##  Day 3 — Python Fundamentals (Project: Study Smart AI)
 
 ### Project Highlights
 StudySmart AI — An intelligent study tracking system that combines Python fundamentals, full-stack development, and AI analytics.
@@ -70,7 +70,7 @@ https://github.com/Sara12-2/Study_Smart_AI
 # 📚 Module 2 — Mathematics for AI/ML
 
 
-## ✅ Day 1 — Linear Algebra: The Basis of Intelligent Systems
+##  Day 1 — Linear Algebra: The Basis of Intelligent Systems
 
 ### Topics Covered
 -  Scalars, Vectors, Matrices & Tensors
@@ -85,7 +85,7 @@ https://github.com/Sara12-2/Study_Smart_AI
 
 --------------------------------------------------
 
-## ✅ Day 2 — Probability & Statistics: The Science of Uncertainty
+##  Day 2 — Probability & Statistics: The Science of Uncertainty
 
 ### Topics Covered
 - Sample Space & Events
@@ -102,7 +102,7 @@ https://github.com/Sara12-2/Study_Smart_AI
 
 --------------------------------------------------
 
-## ✅ Day 3 — Calculus: How AI Learns and Improves
+##  Day 3 — Calculus: How AI Learns and Improves
 
 ### Topics Covered
 - Functions & Rate of Change
@@ -118,7 +118,7 @@ https://github.com/Sara12-2/Study_Smart_AI
 
 --------------------------------------------------
 
-## ✅ Day 4 — Optimization: How AI Finds the Best Solution
+##  Day 4 — Optimization: How AI Finds the Best Solution
 
 ### Topics Covered
 - Loss Functions (MSE, MAE, Cross-Entropy)
@@ -136,7 +136,7 @@ https://github.com/Sara12-2/Study_Smart_AI
 
 # 📚 Module 3 — Data Analysis
 
-## ✅ Day 1 — Data Analysis: The First Step Toward Building Intelligent AI Systems
+##  Day 1 — Data Analysis: The First Step Toward Building Intelligent AI Systems
 
 ### Topics Covered
 - What is Data Analysis
@@ -153,7 +153,7 @@ https://github.com/Sara12-2/Study_Smart_AI
 
 --------------------------------------------------
 
-## ✅ Day 2 — Exploratory Data Analysis (EDA) & Data Preprocessing: Turning Raw Data Into Model-Ready Data
+##  Day 2 — Exploratory Data Analysis (EDA) & Data Preprocessing: Turning Raw Data Into Model-Ready Data
 
 ### Topics Covered
 - Exploratory Data Analysis (Summary Statistics, Distributions, Relationships, Missing Values/Outliers)
@@ -175,7 +175,7 @@ https://github.com/Sara12-2/Study_Smart_AI
 
 # 📚 Module 4 — Machine Learning
 
-## ✅ Day 1 — Supervised Learning: Teaching Machines with Labeled Data
+##  Day 1 — Supervised Learning: Teaching Machines with Labeled Data
 
 ### Topics Covered
 - What is Supervised Learning
@@ -196,7 +196,7 @@ https://github.com/Sara12-2/Study_Smart_AI
 
 --------------------------------------------------
 
-## ✅ Day 2 — Unsupervised Learning: Finding Patterns Without Labels
+##  Day 2 — Unsupervised Learning: Finding Patterns Without Labels
 
 ### Topics Covered
 - What is Unsupervised Learning
@@ -220,7 +220,7 @@ https://github.com/Sara12-2/Study_Smart_AI
 
 # 📚 Module 5 — Deep Learning
 
-## ✅ Day 1 — Artificial Neural Networks (ANN): Built From Scratch with NumPy
+##  Day 1 — Artificial Neural Networks (ANN): Built From Scratch with NumPy
 
 ### Topics Covered
 - What is a Neural Network (`activation(weighted_sum + bias)`)
@@ -252,7 +252,7 @@ https://github.com/Sara12-2/Study_Smart_AI
 
 --------------------------------------------------
 
-## ✅ Day 2 — Convolutional Neural Networks (CNN): Deep Learning for Images
+##  Day 2 — Convolutional Neural Networks (CNN): Deep Learning for Images
 
 ### Topics Covered
 - Why CNN vs Fully Connected Networks (preserving spatial structure, weight sharing)
@@ -279,7 +279,7 @@ https://github.com/Sara12-2/Study_Smart_AI
 
 --------------------------------------------------
 
-## ✅ Day 3 — Sequential Models: RNN, LSTM & GRU
+##  Day 3 — Sequential Models: RNN, LSTM & GRU
 
 ### Topics Covered
 - Sequential Models — what Sequential Data is (Time Series, Text, Speech, Video Data)
@@ -303,7 +303,7 @@ https://github.com/Sara12-2/Study_Smart_AI
 
 --------------------------------------------------
 
-## ✅ Day 4 — Attention, Transformers & Generative AI (Final Day)
+##  Day 4 — Attention, Transformers & Generative AI (Final Day)
 
 ### Topics Covered
 - Attention Mechanism — Scaled Dot-Product Attention (`softmax(QKᵀ/√d_k)·V`), solving the Seq2Seq context-vector bottleneck
@@ -340,7 +340,7 @@ Four days, from a single Perceptron to Transformers and Generative AI — a comp
 
 # 📚 Module 6 — Natural Language Processing (NLP)
 
-## ✅ Day 1 — NLP Fundamentals: From Raw Text to Modern LLM Foundations
+##  Day 1 — NLP Fundamentals: From Raw Text to Modern LLM Foundations
 
 ### 📖 Topics Covered
 
@@ -401,7 +401,7 @@ Large Language Models (LLMs)
 
 ---
 
-### 💡 Key Learnings
+###  Key Learnings
 
 - Traditional methods like **BoW** and **TF-IDF** rely on word frequency rather than meaning.
 - Word embeddings such as **Word2Vec**, **GloVe**, and **FastText** capture semantic relationships between words.
@@ -413,7 +413,7 @@ Large Language Models (LLMs)
 
 ---
 
-## ✅ Day 2 — Transformers, Language Models & LLM Foundations
+##  Day 2 — Transformers, Language Models & LLM Foundations
 
 ### 📖 Topics Covered
 
@@ -472,7 +472,7 @@ Instead of building a separate model for every NLP task:
 
 ---
 
-### 💡 Key Learnings
+###  Key Learnings
 
 - NLP has evolved from **counting words** to **understanding meaning**, **capturing context**, and finally powering intelligent AI systems.
 - Self-Attention enables every token to interact with every other token, allowing richer contextual understanding.
@@ -485,7 +485,7 @@ Instead of building a separate model for every NLP task:
 
 ---
 
-# 🧠 Module 6 Summary
+#  Module 6 Summary
 
 ### Evolution of NLP
 
@@ -510,7 +510,7 @@ RAG • Fine-tuning • AI Agents
 ---
 # 📚 Module 7 — Computer Vision
 
-## ✅ Day 1 — Computer Vision Fundamentals
+##  Day 1 — Computer Vision Fundamentals
 
 ### 📖 Topics Covered
 
@@ -884,7 +884,7 @@ Production Applications
 
 ---
 
-## ✅ Day 1 — Foundation of Modern RAG and Semantic Search
+##  Day 1 — Foundation of Modern RAG and Semantic Search
 
 ### 📖 Topics Covered
 
@@ -944,7 +944,7 @@ Production Applications
 * **Pinecone**: Scalable managed vector database
 * **Weaviate & Milvus**: Vector search platforms for AI workloads
 
-### 💡 Key Learnings
+###  Key Learnings
 
 * Vector Databases act as the knowledge retrieval layer for modern AI systems
 * Embeddings convert meaning into numerical representations for search
@@ -959,7 +959,7 @@ Vector Databases act as the knowledge retrieval layer for modern AI systems, all
 
 ---
 
-## ✅ Day 2 — From Embeddings to Intelligent Information Retrieval
+##  Day 2 — From Embeddings to Intelligent Information Retrieval
 
 ### 📖 Topics Covered
 
