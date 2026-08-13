@@ -880,61 +880,82 @@ RAG / AI Agents
     ↓
 Production Applications
 ```
+# 📚 Module 9 — Vector Databases
 
 ---
-# 📚 Module 9 — Vector Databases & MLOps
 
-## ✅ Day 1 — Vector Databases: The Foundation of Modern RAG
+## ✅ Day 1 — Foundation of Modern RAG and Semantic Search
 
 ### 📖 Topics Covered
 
-#### 🔹 Why Vector Databases Matter
+#### 🔹 The Challenge: LLM Limitations
 
-- LLMs have static knowledge and a training cutoff.
-- They cannot directly access private documents or real-time data.
-- Vector databases enable semantic search and Retrieval-Augmented Generation (RAG).
+* LLMs only contain knowledge learned during training
+* Cannot access private documents or company data
+* Cannot access continuously updated information
+* Limited to static training data knowledge
 
-#### 🔹 Vectors & Embeddings
+#### 🔹 The Solution: Vector Databases
 
-- Convert text, images, and documents into numerical vectors.
-- Embeddings capture the semantic meaning of data.
-- Similar concepts have closer vector representations.
+* Store and retrieve information through embeddings
+* Enable AI systems to search based on meaning and context
+* Bridge the gap between LLMs and external knowledge
 
-#### 🔹 Semantic Search
+#### 🔹 Core Concepts
 
-- Understands the meaning behind user queries.
-- Retrieves contextually relevant information.
-- More effective than traditional keyword-based search for semantic tasks.
+**Vectors & Embeddings**
 
-#### 🔹 Similarity Metrics
+* Convert text, images, and documents into numerical vectors
+* Capture semantic meaning of the content
+* Similar concepts have closer vector representations
 
-- **Cosine Similarity:** Measures similarity based on vector direction.
-- **Euclidean Distance:** Measures the distance between vectors.
-- **Dot Product:** Measures similarity through vector multiplication.
+**Vector Databases**
 
-#### 🔹 Vector Indexing
+* Store embeddings efficiently
+* Retrieve similar information using similarity search
+* Essential for RAG and AI search applications
 
-- **HNSW:** Multi-layer graph structure for fast and accurate search.
-- **IVF:** Clusters vectors and searches relevant clusters.
-- **PQ:** Compresses vectors to reduce memory usage.
+**Semantic Search**
 
-#### 🔹 Popular Vector Databases & Libraries
+* Understands the meaning behind queries
+* Retrieves contextually relevant results
+* Unlike keyword search, which matches exact words
 
-| Technology | Common Use |
-|---|---|
-| **FAISS** | Research and prototyping |
-| **ChromaDB** | Lightweight local AI and RAG applications |
-| **Pinecone** | Fully managed and scalable vector search |
-| **Weaviate** | Hybrid search and AI applications |
-| **Milvus** | High-performance and large-scale vector search |
+**Similarity Metrics**
+
+* **Cosine Similarity**: Measures similarity between vector directions
+* **Euclidean Distance**: Measures distance between vectors
+* **Dot Product**: Calculates similarity using vector multiplication
+
+**Nearest Neighbor (NN) & ANN**
+
+* **NN**: Finds the closest vectors
+* **ANN**: Enables faster approximate search for large-scale datasets
+
+**Vector Indexing**
+
+* Organizes vectors to improve retrieval speed
+* Common techniques: HNSW, IVF
+
+#### 🔹 Popular Vector Databases
+
+* **FAISS**: Efficient similarity search library
+* **ChromaDB**: Lightweight database for AI applications
+* **Pinecone**: Scalable managed vector database
+* **Weaviate & Milvus**: Vector search platforms for AI workloads
 
 ### 💡 Key Learnings
 
-- Vector databases act as the knowledge retrieval layer for modern AI systems.
-- Embeddings convert unstructured data into numerical representations that capture meaning.
-- Semantic search understands intent rather than relying only on exact keywords.
-- Approximate Nearest Neighbor (ANN) search enables fast similarity search at scale.
-- Vector databases are essential components of modern RAG and production AI applications.
+* Vector Databases act as the knowledge retrieval layer for modern AI systems
+* Embeddings convert meaning into numerical representations for search
+* Semantic search finds meaning, not just keywords
+* Different similarity metrics serve different use cases
+* Indexing is crucial for fast retrieval at scale
+* Vector Databases are a key component behind RAG, AI assistants, and Semantic Search
+
+### 🔑 Key Takeaway
+
+Vector Databases act as the knowledge retrieval layer for modern AI systems, allowing LLMs to access relevant external information and generate accurate, context-aware responses.
 
 ---
 
@@ -944,77 +965,171 @@ Production Applications
 
 #### 🔹 Embedding Generation
 
-- Convert documents and user queries into numerical vectors.
-- Embeddings capture semantic meaning for similarity-based retrieval.
+* Documents and user queries are converted into numerical vectors
+* Vectors capture semantic meaning of the content
+* Makes similarity-based retrieval possible
 
 #### 🔹 Document Chunking
 
-- Large documents are split into smaller, meaningful chunks.
-- Improves retrieval accuracy.
-- Provides more relevant context to the LLM.
-- Helps prevent unnecessary information from being passed to the model.
+* Large documents are split into smaller chunks
+* Improves retrieval accuracy
+* Provides more relevant context
+* Chunking strategy directly impacts retrieval quality
 
 #### 🔹 Metadata
 
-- Store additional information such as:
-  - Source
-  - Page number
-  - Category
-  - Document ID
-  - File name
-- Enables precise filtering and more accurate retrieval.
+* Document source information
+* Page numbers
+* Categories
+* Enables more precise filtering and retrieval
 
 #### 🔹 FAISS & ChromaDB
 
-- **FAISS:** Provides fast similarity search for large collections of vectors.
-- **ChromaDB:** Simple and efficient vector storage for semantic search and RAG applications.
+* **FAISS**: Ultra-fast similarity search
+* **ChromaDB**: Simple and efficient way to store, index, and retrieve embeddings
+* Both are useful for semantic search and RAG applications
 
 #### 🔹 Similarity Retrieval
 
-The basic retrieval process:
+* User queries are converted into embeddings
+* Query embeddings are matched against stored vectors
+* Most relevant information is retrieved based on meaning
+* Retrieval is not based only on exact keyword matching
+
+#### 🔹 The Complete Workflow
 
 ```text
+Documents
+    ↓
+Embedding Generation
+    ↓
+Vector Database
+
 User Query
-     ↓
+    ↓
 Query Embedding
-     ↓
-Vector Similarity Search
-     ↓
-Retrieve Relevant Chunks
-     ↓
-Relevant Context
-     ↓
-LLM
-     ↓
-Generated Answer
+    ↓
+Similarity Search
+    ↓
+Retrieved Information
+```
+
+### 💡 Key Learnings
+
+* Better embeddings improve semantic search accuracy
+* Chunking strategy directly impacts retrieval quality
+* Metadata enables more precise filtering
+* FAISS and ChromaDB are powerful tools for different use cases
+* Vector Databases are the retrieval engine of modern AI systems
+* They allow LLMs to access relevant external knowledge
+* They can help reduce hallucinations in RAG systems
+* They enable more accurate, context-aware responses
+
+### 🔑 Key Takeaway
+
+Vector Databases are the retrieval engine of modern AI systems. They allow LLMs to access relevant external knowledge, reduce hallucinations, and generate more accurate, context-aware responses.
+
+---
+
+## 📊 Module 9 — Complete Workflow
+
+```text
+Raw Documents
+        ↓
+Document Chunking
+        ↓
+Embedding Generation
+        ↓
+Store in Vector Database (with Metadata)
+        ↓
+User Query
+        ↓
+Query Embedding
+        ↓
+Similarity Search
+        ↓
+Retrieve Relevant Information
+        ↓
+LLM → Accurate & Grounded Response
+```
 
 ---
 
 # 📚 Module 10 — Retrieval-Augmented Generation (RAG)
 
-## ✅ Day 1 — RAG: Bridging LLMs with External Knowledge
+---
+
+## ✅ Day 1 — Bridging LLMs with External Knowledge
 
 ### 📖 Topics Covered
 
-- What is RAG (Retrieval-Augmented Generation)
-- Why RAG is Needed
-  - LLMs have static knowledge
-  - LLMs can produce hallucinations
-  - LLMs cannot directly access private data
-- How RAG Works
-  - Query → Embedding → Vector Database → Retrieve Context → LLM → Response
-- Real-World Applications
-  - AI Chatbots
-  - Enterprise Assistants
-  - Document Question Answering
-  - Customer Support Systems
+#### 🔹 What is RAG?
 
-### 💡 Key Learnings
+* AI architecture combining LLM reasoning capabilities with external knowledge retrieval
+* Retrieves relevant information before generating a response
+* Enables more accurate, up-to-date, and grounded answers
+* Common knowledge sources include PDFs, documents, websites, databases, and vector databases
 
-- RAG combines LLM reasoning with external knowledge retrieval.
-- Retrieved information helps ground LLM responses in relevant data.
-- Embeddings and vector databases enable semantic search.
-- RAG powers modern AI applications that require accurate and domain-specific information.
+#### 🔹 Why RAG is Needed
+
+**Traditional LLM Limitations:**
+
+* Knowledge is limited to training data
+* May produce hallucinations — confident but incorrect answers
+* Cannot directly access private, proprietary, or real-time information
+
+**RAG Solutions:**
+
+* Retrieves relevant information before response generation
+* Makes answers more reliable and context-aware
+* Helps reduce hallucinations
+
+#### 🔹 How RAG Works — 6-Step Pipeline
+
+1. **User submits a query**
+2. **Query is converted into an embedding**
+3. **Embedding searches the vector database**
+4. **Most relevant document chunks are retrieved**
+5. **Retrieved context is combined with the original prompt**
+6. **LLM generates a grounded response**
+
+#### 🔹 RAG Flow
+
+```text
+User Query
+    ↓
+Embedding
+    ↓
+Vector Database
+    ↓
+Retrieve Relevant Context
+    ↓
+LLM
+    ↓
+Final Response
+```
+
+#### 🔹 Real-World Applications
+
+* AI Chatbots
+* Enterprise Knowledge Assistants
+* Document Question Answering
+* Customer Support Systems
+* Research Assistants
+* Legal & Medical AI Solutions
+
+###  Key Learnings
+
+* RAG combines LLM intelligence with external knowledge retrieval
+* Integrates embeddings, vector databases, and semantic search
+* Enables AI systems to generate more accurate responses
+* Helps reduce hallucinations
+* Makes AI responses more reliable and grounded
+* Powers many modern production AI applications
+
+###  Key Takeaway
+
+RAG combines the intelligence of LLMs with the power of external knowledge retrieval. By integrating embeddings, vector databases, and semantic search, it enables AI systems to generate responses that are more accurate, reliable, and grounded in real-world information.
 
 ---
 
@@ -1022,70 +1137,96 @@ Generated Answer
 
 ### 📖 Topics Covered
 
-#### 🔹 Stage 1 — Indexing Pipeline
+#### 🔹 Stage 1: Indexing Pipeline — Offline Process
 
-```text
-Collect Documents
-       ↓
-Clean Data
-       ↓
-Chunk Documents
-       ↓
-Generate Embeddings
-       ↓
-Store in Vector Database
-```
+The indexing pipeline prepares the knowledge base before users interact with the AI system.
 
-#### 🔹 Stage 2 — Retrieval & Generation Pipeline
+### 1. Collect Data
 
-```text
-User Query
-     ↓
-Query Embedding
-     ↓
-Vector Search
-     ↓
-Retrieve Relevant Context
-     ↓
-LLM
-     ↓
-Generated Response
-```
+Possible sources include:
 
-#### 🔹 Complete RAG Flow
+* PDFs
+* Documents
+* Websites
+* Databases
+* APIs
+
+### 2. Data Cleaning & Preprocessing
+
+* Remove unnecessary information
+* Clean formatting issues
+* Standardize text
+* Normalize content where necessary
+
+### 3. Document Chunking
+
+* Split large documents into smaller chunks
+* Improves retrieval efficiency and accuracy
+* Makes relevant information easier to retrieve
+
+### 4. Embedding Generation
+
+* Convert each chunk into vector embeddings
+* Use an embedding model to represent semantic meaning
+
+### 5. Store in Vector Database
+
+* Store embeddings with metadata
+* Create a searchable knowledge base
+* Make documents ready for similarity-based retrieval
+
+---
+
+#### 🔹 Stage 2: Retrieval & Generation Pipeline — Online Process
+
+This pipeline runs when a user sends a query.
+
+1. **User submits a query**
+2. **Query is converted into a query embedding**
+3. **Similarity search is performed in the vector database**
+4. **Most relevant document chunks are retrieved**
+5. **Retrieved context is combined with the original prompt**
+6. **Complete prompt is sent to the LLM**
+7. **LLM generates a grounded, context-aware response**
+
+#### 🔹 Practical RAG Flow
 
 ```text
 Raw Documents
-      ↓
-Data Cleaning
-      ↓
-Document Chunking
-      ↓
-Embedding Generation
-      ↓
+    ↓
+Cleaning & Preprocessing
+    ↓
+Chunking
+    ↓
+Embedding Model
+    ↓
 Vector Database
-      ↓
+    ↓
 User Query
-      ↓
+    ↓
 Query Embedding
-      ↓
+    ↓
 Similarity Search
-      ↓
-Relevant Context
-      ↓
+    ↓
+Retrieved Context
+    ↓
 LLM
-      ↓
-Final Response
+    ↓
+Accurate & Grounded Response
 ```
 
-### 💡 Key Learnings
+###  Key Learnings
 
-- Chunking strategy directly impacts retrieval quality.
-- Better embeddings improve semantic search accuracy.
-- Vector databases enable fast similarity search.
-- Retrieved context helps reduce unsupported LLM responses.
-- High-quality data leads to better RAG performance.
-- A well-designed indexing and retrieval pipeline is essential for effective RAG systems.
+* **Chunking Strategy** directly impacts retrieval quality
+* **Better Embeddings** improve semantic search accuracy
+* **Vector Databases** enable fast similarity search
+* **Retrieved Context** helps reduce LLM hallucinations
+* **High-Quality Data** leads to better RAG performance
+* **Prompt Augmentation** helps the LLM generate grounded responses
+
+###  Key Takeaway
+
+A powerful RAG system is not only about using an LLM. Its performance depends on the complete pipeline: data preparation, chunking, embeddings, semantic search, retrieval, and prompt augmentation to generate reliable and context-aware AI responses.
 
 ---
 
@@ -1095,48 +1236,325 @@ Final Response
 
 #### 🔹 Why RAG Evaluation is Needed
 
-- Evaluate retrieval quality.
-- Measure the accuracy and reliability of generated responses.
-- Identify weaknesses in the retrieval and generation pipeline.
-- Improve RAG systems for production use.
+Traditional LLM output evaluation can be challenging because answers may appear correct while being unsupported or factually incorrect.
 
-#### 🔹 Faithfulness
+Evaluation helps measure:
+
+* Quality of retrieved context
+* Accuracy of generated answers
+* Reduction of hallucinations
+* Overall reliability of AI applications
+
+#### 🔹 Key RAG Evaluation Metrics
+
+### 1. Faithfulness
 
 Measures whether the generated answer is supported by the retrieved context.
 
-#### 🔹 Answer Relevance
+* **High faithfulness** → Response is grounded in the retrieved information
+* **Low faithfulness** → Response may contain unsupported or fabricated information
 
-Measures whether the generated response actually addresses the user's query.
+### 2. Answer Relevance
 
-#### 🔹 Context Precision
+Measures whether the generated answer properly addresses the user's query.
 
-Evaluates whether the retrieved chunks are relevant to the user's query.
+A relevant answer should be:
 
-#### 🔹 Context Recall
+* Directly related to the question
+* Clear
+* Useful
+* Focused on the user's intent
 
-Measures whether all the necessary information required to answer the query was successfully retrieved.
+### 3. Context Precision
 
-#### 🔹 Evaluation Flow
+Measures how relevant the retrieved document chunks are.
+
+* High precision → Retrieved chunks are mostly useful
+* Low precision → Retrieval includes unnecessary or irrelevant information
+
+### 4. Context Recall
+
+Measures whether the retrieval system finds the information necessary to answer the query.
+
+* High recall → Important information is successfully retrieved
+* Low recall → Relevant information may be missing
+
+#### 🔹 RAG Evaluation Flow
 
 ```text
 User Query
-     ↓
+    ↓
 Retrieved Context
-     ↓
-Generated Response
-     ↓
+    ↓
+LLM Response
+    ↓
 Evaluation Metrics
-     ↓
-Identify Weaknesses
-     ↓
-Improve RAG Pipeline
+    ↓
+Performance Improvement
 ```
 
-### 💡 Key Learnings
+###  Key Learnings
 
-- **Faithfulness** checks whether answers are grounded in retrieved context.
-- **Answer Relevance** measures whether the response addresses the query.
-- **Context Precision** evaluates retrieved chunk quality.
-- **Context Recall** measures whether all necessary information was retrieved.
-- Evaluation helps identify weaknesses in both retrieval and generation.
-- Proper evaluation is essential for building reliable and production-ready RAG systems.
+* Building a powerful RAG system is not only about retrieval and generation
+* Proper evaluation ensures AI applications provide reliable responses
+* Faithfulness ensures responses are grounded in retrieved context
+* Answer relevance ensures responses address user needs
+* Context precision measures retrieval quality
+* Context recall measures whether important information was retrieved
+* Evaluation helps identify weaknesses in the RAG pipeline
+* Evaluation enables continuous improvement of RAG systems
+
+###  Key Takeaway
+
+A production-quality RAG system must be evaluated at both the **retrieval** and **generation** levels. Faithfulness, answer relevance, context precision, and context recall help identify whether the system retrieves the right information and generates answers that are grounded, relevant, and reliable.
+
+# 📚 Module 11 — AI System Design
+
+## 🎯 Overview
+
+Module 11 focuses on designing complete, production-ready AI applications.
+
+The module covers system architecture, client-server communication, REST APIs, architecture patterns, databases, caching, vector databases, ML/LLM pipelines, RAG, and AI security.
+
+---
+
+## 📅 Module Roadmap
+
+| Day | Topic |
+|---|---|
+| Day 1 | AI System Design Fundamentals |
+| Day 2 | Client-Server Architecture |
+| Day 3 | REST APIs |
+| Day 4 | Monolith vs Microservices |
+| Day 5 | Stateful vs Stateless Architecture |
+| Day 6 | SQL vs NoSQL |
+| Day 7 | Database Design |
+| Day 8 | Database Indexing |
+| Day 9 | Redis & Caching |
+| Day 10 | Vector Database in AI Systems |
+| Day 11 | ML Pipeline |
+| Day 12 | LLM Pipeline |
+| Day 13 | RAG Pipeline |
+| Day 14 | AI Security |
+
+---
+
+## 📖 Topics Covered
+
+### Day 1 — Building AI Applications Beyond Models
+
+- AI System Design
+- Functional Requirements
+- Non-Functional Requirements
+- High-Level Design (HLD)
+- Low-Level Design (LLD)
+- Scalability
+- Performance
+- Reliability
+- Availability
+- Security
+- Maintainability
+
+### Day 2 — Client-Server Architecture
+
+- Client-Server Architecture
+- Client responsibilities
+- Server responsibilities
+- HTTP request/response flow
+- Browser request flow
+- Client-server architecture in AI applications
+
+### Day 3 — REST APIs
+
+- Application Programming Interface (API)
+- HTTP methods
+- GET
+- POST
+- PUT
+- DELETE
+- HTTP status codes
+- JSON
+- REST APIs in AI applications
+
+### Day 4 — Monolith vs Microservices
+
+- Monolithic Architecture
+- Microservices Architecture
+- API Gateway
+- Independent services
+- Authentication Service
+- AI Service
+- Retrieval Service
+- Payment Service
+- Advantages and limitations
+- Architecture selection
+
+### Day 5 — Stateful vs Stateless Architecture
+
+- Application state
+- Stateful Architecture
+- Stateless Architecture
+- Sessions
+- Cookies
+- JWT
+- Authentication flows
+- Stateful vs Stateless AI systems
+
+### Day 6 — SQL vs NoSQL
+
+- SQL Databases
+- PostgreSQL
+- MySQL
+- NoSQL Databases
+- MongoDB
+- Structured data
+- Flexible schemas
+- Relationships
+- Transactions
+- Distributed workloads
+- Database selection in AI systems
+
+### Day 7 — Database Design
+
+- Primary Keys
+- Foreign Keys
+- One-to-One relationships
+- One-to-Many relationships
+- Many-to-Many relationships
+- ER Diagrams
+- AI Resume Screening System database design
+
+### Day 8 — Database Indexing
+
+- Database indexes
+- Index lookup
+- Query performance
+- WHERE filters
+- JOIN conditions
+- ORDER BY
+- Search and filtering
+- Indexing in AI systems
+- Index trade-offs
+
+### Day 9 — Redis & Caching
+
+- Redis
+- In-memory data storage
+- Cache Hit
+- Cache Miss
+- Caching
+- Session Storage
+- Rate Limiting
+- Temporary State
+- AI Response Caching
+- Redis vs Primary Database
+
+### Day 10 — Vector Database in AI Systems
+
+- Vector Databases
+- Embeddings
+- Metadata
+- Similarity Search
+- Vector Database vs Traditional Database
+- AI PDF Chat
+- Semantic Retrieval
+
+### Day 11 — ML Pipeline
+
+- Data Collection
+- Data Preprocessing
+- Feature Engineering
+- Model Training
+- Model Evaluation
+- Prediction
+- Classification Metrics
+- Regression Metrics
+- Training vs Inference
+
+### Day 12 — LLM Pipeline
+
+- Basic LLM Pipeline
+- Prompt Construction
+- Conversation History
+- Streaming
+- LLM API Flow
+- Production Considerations
+- Latency
+- Token Usage
+- Cost
+- Rate Limits
+- Timeouts
+- Retries
+- Error Handling
+- Authentication
+- Logging
+- Monitoring
+- Caching
+- LLM vs RAG Pipeline
+
+### Day 13 — RAG Pipeline
+
+- Complete RAG Flow
+- Data Ingestion
+- PDF Text Extraction
+- Chunking
+- Embeddings
+- Vector Database
+- Retrieval
+- Context Selection
+- Prompt Construction
+- Generation
+- RAG Performance Factors
+
+### Day 14 — AI Security
+
+- Authentication
+- Authorization
+- JWT
+- Sessions
+- Secure Cookies
+- API Key Protection
+- Secret Management
+- Environment Variables
+- Input Validation
+- Rate Limiting
+- Access Control
+- HTTPS
+- Secure File Handling
+
+---
+
+## 🔄 Complete AI System Design Flow
+
+```text
+AI System Design
+       ↓
+Client-Server Architecture
+       ↓
+REST APIs
+       ↓
+Monolith / Microservices
+       ↓
+Stateful / Stateless Architecture
+       ↓
+SQL / NoSQL Databases
+       ↓
+Database Design
+       ↓
+Database Indexing
+       ↓
+Redis & Caching
+       ↓
+Vector Databases
+       ↓
+ML Pipeline
+       ↓
+LLM Pipeline
+       ↓
+RAG Pipeline
+       ↓
+AI Security
+       ↓
+Production-Ready AI Applications
+
+```
