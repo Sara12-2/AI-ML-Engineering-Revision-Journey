@@ -1558,3 +1558,328 @@ AI Security
 Production-Ready AI Applications
 
 ```
+
+📚 Module 12 — Deployment
+
+Deployment Fundamentals & Git/GitHub
+
+📖 Topics Covered
+
+🔹 What is Deployment?
+
+- Development vs Production Environment
+- What is Deployment?
+- Application Build Process
+- Localhost vs Production
+- Server & Cloud Deployment
+- Deployment Workflow
+
+🔹 Git & Version Control
+
+- What is Git?
+- Git Repository
+- Working Directory
+- Staging Area
+- Commits
+- Branches
+- Merge & Pull Requests
+- ".gitignore"
+
+🔹 GitHub
+
+- GitHub Repositories
+- Push & Pull
+- Remote Repository
+- Branch Management
+- Pull Requests
+- GitHub as the source for deployment
+
+🔹 Basic Deployment Workflow
+
+Local Code
+    ↓
+Git
+    ↓
+Commit
+    ↓
+GitHub Repository
+    ↓
+Build
+    ↓
+Deploy
+    ↓
+Production
+
+🔑 Key Learnings
+
+- Git provides version control and helps track changes in a project.
+- GitHub provides a remote platform for storing, collaborating on, and managing code.
+- A clean Git workflow makes deployment and collaboration easier.
+- Production deployment should be based on a controlled and versioned codebase.
+- GitHub repositories can be connected directly to modern deployment platforms.
+
+---
+Docker & Containerization
+
+📖 Topics Covered
+
+🔹 Docker Fundamentals
+
+- What is Docker?
+- Containers vs Virtual Machines
+- Docker Images
+- Docker Containers
+- Dockerfile
+- Docker Hub
+- Containerized Applications
+
+🔹 Docker Workflow
+
+Application
+     ↓
+Dockerfile
+     ↓
+Docker Image
+     ↓
+Docker Container
+     ↓
+Running Application
+
+🔹 Dockerfile
+
+- Base Image
+- Working Directory
+- Dependencies
+- Environment Variables
+- Application Code
+- Exposed Port
+- Start Command
+
+Example:
+
+FROM python:3.11
+
+WORKDIR /app
+
+COPY requirements.txt .
+
+RUN pip install -r requirements.txt
+
+COPY . .
+
+EXPOSE 8000
+
+CMD ["python", "app.py"]
+
+🔹 Docker Compose
+
+- Multiple Containers
+- Backend + Database
+- Service Configuration
+- Networks
+- Volumes
+- Environment Variables
+
+Example architecture:
+
+        Docker Compose
+              │
+       ┌──────┴──────┐
+       ↓             ↓
+    Backend       PostgreSQL
+   Container       Container
+
+🔑 Key Learnings
+
+- Docker packages an application and its dependencies into a portable container.
+- A Docker image is the blueprint used to create containers.
+- A container is the running instance of an image.
+- Docker helps maintain consistency between development, testing, and production environments.
+- Docker Compose makes it easier to run applications containing multiple services.
+
+---
+
+CI/CD & Automated Deployment
+
+📖 Topics Covered
+
+🔹 Continuous Integration (CI)
+
+- What is CI?
+- Automated Testing
+- Code Validation
+- Build Verification
+- Pull Request Checks
+
+🔹 Continuous Delivery / Deployment (CD)
+
+- What is CD?
+- Automated Builds
+- Automated Deployment
+- Production Releases
+- Deployment Pipelines
+
+🔹 CI/CD Workflow
+
+Developer
+    ↓
+Git Commit
+    ↓
+GitHub
+    ↓
+CI Pipeline
+    ↓
+Run Tests
+    ↓
+Build Application
+    ↓
+Build Docker Image
+    ↓
+Deploy
+    ↓
+Production
+
+🔹 GitHub Actions
+
+- Workflows
+- Events
+- Jobs
+- Steps
+- Runners
+- Secrets
+- Automated Testing
+- Automated Deployment
+
+Example:
+
+GitHub Push
+     ↓
+GitHub Actions
+     ↓
+Install Dependencies
+     ↓
+Run Tests
+     ↓
+Build
+     ↓
+Deploy
+
+🔑 Key Learnings
+
+- CI automatically validates code whenever changes are introduced.
+- CD automates the process of delivering or deploying those changes.
+- GitHub Actions can connect source code, testing, building, Docker, and deployment into one automated workflow.
+- CI/CD reduces manual deployment errors and makes releases more consistent.
+- Automated pipelines are especially important when applications are updated frequently.
+
+---
+
+ Production Deployment & AI Application Deployment
+
+📖 Topics Covered
+
+🔹 Deployment Platforms
+
+- Vercel
+- Netlify
+- Render
+- Railway
+- Cloud Servers
+- Container-based Deployment
+
+🔹 Environment Variables
+
+- ".env"
+- Production Environment Variables
+- API Keys
+- Database Credentials
+- Secret Management
+
+🔹 Production Essentials
+
+- HTTPS
+- Logging
+- Error Handling
+- Monitoring
+- Health Checks
+- Scalability
+- Resource Management
+- Security
+
+🔹 Full-Stack AI Deployment
+
+                 USER
+                   ↓
+             FRONTEND
+          Next.js / React
+                   ↓
+              API SERVER
+          Flask / FastAPI
+                   ↓
+        ┌──────────┴──────────┐
+        ↓                     ↓
+    DATABASE              AI / LLM
+  PostgreSQL              API / Model
+        │                     │
+        └──────────┬──────────┘
+                   ↓
+              PRODUCTION
+
+🔹 AI Application Deployment Flow
+
+Code
+ ↓
+GitHub
+ ↓
+CI/CD
+ ↓
+Docker
+ ↓
+Backend + Database + AI Services
+ ↓
+Cloud / Server
+ ↓
+Production
+
+Key Learnings
+
+- Deployment is more than simply putting code online.
+- Production applications require environment variables, secrets, logging, monitoring, error handling, and security.
+- AI applications often contain multiple services that must be deployed and connected.
+- Frontend, backend, database, and AI services can be deployed independently or together depending on the architecture.
+- Docker and CI/CD make production deployment more repeatable and reliable.
+
+--
+ Module 12 Complete — Deployment
+
+Deployment connects the entire AI/ML Engineering journey with the real world.
+
+From writing code to making an AI-powered application accessible to users:
+
+Code
+  ↓
+Git
+  ↓
+GitHub
+  ↓
+CI/CD
+  ↓
+Docker
+  ↓
+Cloud / Server
+  ↓
+Production
+
+🎯 Final Takeaways
+
+- Git & GitHub → Version Control & Collaboration
+- Docker → Containerization
+- CI/CD → Automation
+- Environment Variables → Configuration & Secrets
+- Cloud Platforms → Application Hosting
+- Monitoring & Logging → Production Reliability
+- Deployment Architecture → Connecting Frontend, Backend, Database & AI Services
+
+«From Python fundamentals to AI System Design and Deployment — the revision journey is now complete.»
+
+2 Modules. Countless concepts. One complete AI/ML Engineering revision journey.
