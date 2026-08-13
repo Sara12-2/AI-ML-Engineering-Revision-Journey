@@ -1014,7 +1014,7 @@ Similarity Search
 Retrieved Information
 ```
 
-### 💡 Key Learnings
+###  Key Learnings
 
 * Better embeddings improve semantic search accuracy
 * Chunking strategy directly impacts retrieval quality
@@ -1025,7 +1025,7 @@ Retrieved Information
 * They can help reduce hallucinations in RAG systems
 * They enable more accurate, context-aware responses
 
-### 🔑 Key Takeaway
+###  Key Takeaway
 
 Vector Databases are the retrieval engine of modern AI systems. They allow LLMs to access relevant external knowledge, reduce hallucinations, and generate more accurate, context-aware responses.
 
@@ -1059,7 +1059,7 @@ LLM → Accurate & Grounded Response
 
 ---
 
-## ✅ Day 1 — Bridging LLMs with External Knowledge
+##  Day 1 — Bridging LLMs with External Knowledge
 
 ### 📖 Topics Covered
 
@@ -1133,7 +1133,7 @@ RAG combines the intelligence of LLMs with the power of external knowledge retri
 
 ---
 
-## ✅ Day 2 — Practical RAG Pipeline
+##  Day 2 — Practical RAG Pipeline
 
 ### 📖 Topics Covered
 
@@ -1230,7 +1230,7 @@ A powerful RAG system is not only about using an LLM. Its performance depends on
 
 ---
 
-## ✅ Day 3 — RAG Evaluation Metrics
+##  Day 3 — RAG Evaluation Metrics
 
 ### 📖 Topics Covered
 
